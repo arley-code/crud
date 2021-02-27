@@ -1,21 +1,10 @@
 # crud
-pryecto crud
+base de datos
 
-Ejercicio Realizar un crud para registrar Usuarios guardando en una base de datos MySQL/MariaDB...
-
-Debe permitir las funciones básicas de:
-Listar usuarios
-Crear usuarios
-Actualizar usuarios
-Eliminar usuarios
-
-Campos:
-Nombre: Requerido y > 3 caracteres
-Apellido: Requerido y > 3 caracteres
-Celular: No es requerido, pero si lo digita debe ser de 10 caracteres
-Correo electronico: Requerido, formato email
-Contraseña: Tiene que tener minimo 8 caracteres, 1 Letra mayuscula y 1 caracteres especial
-
-Incluir en el proyecto SQL de la base de datos
-Github Url del repositorio
-Consola
+| usuarios | CREATE TABLE `usuarios` (
+  `name` varchar(50) NOT NULL DEFAULT '0',
+  `lastname` varchar(10) NOT NULL,
+  `phone` varchar(50) NOT NULL DEFAULT '0',
+  `email` varchar(10) NOT NULL,
+  `password` varchar(10) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci |
